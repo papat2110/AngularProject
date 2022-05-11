@@ -9,6 +9,10 @@
 </head>
 <body>
     <p>login works! {{name}}</p>
+    /////////////////////////////////////////////////////
+    <a href="" routerLink="home"><button>go to next page</button></a>
+    <a href="" routerLink="information/3"><button>next page with Id</button></a>
+    ////////////////////////////////////////////////////
     <form action="" style="width: 30%;">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -41,13 +45,12 @@
     <br>
     ////////////////////////////////////////////////
     <br>
-    <ul *ngFor="let user of userList;">
-        <li>{{user.userId}} {{user.id}} {{user.title}}</li>
-    </ul>
+    <a *ngFor="let user of userList" [routerLink]="['information', user.id]">
+        <p>{{user.userId}} {{user.id}} {{user.title}}</p>
+    </a>
     <!-- {{usr}} -->
     <br>
     ////////////////////////////////////////////////
     <br>
-    <a href="" routerLink="home"><button>go to next page</button></a>
 </body>
 </html>

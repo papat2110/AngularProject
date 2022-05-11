@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginComponent } from '../login/login.component';
 import { ActivatedRoute } from '@angular/router';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-information',
+  templateUrl: './information.component.html',
+  styleUrls: ['./information.component.css']
 })
-export class HomeComponent implements OnInit {
+export class InformationComponent implements OnInit {
 
   public title = "Fah ja";
   public id!: number;
@@ -21,5 +21,6 @@ export class HomeComponent implements OnInit {
       // In a real app: dispatch action to load the details here.
    });
   }
+
 
 }
