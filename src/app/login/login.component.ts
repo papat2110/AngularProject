@@ -34,4 +34,8 @@ export class LoginComponent implements OnInit {
     return false;
   }
 
+  onChange(response: string){
+    console.log(response);
+  }
+
 }
